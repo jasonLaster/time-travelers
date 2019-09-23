@@ -1,0 +1,114 @@
+@import url('https://rsms.me/inter/inter.css');
+html {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(113.92deg, #243264 4.29%, #273B7F 49.04%, #5233B7 72.11%);
+}
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 40px 100px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+  max-width: 650px;
+
+}
+
+h1 {
+  align-self: center;
+  font-family: Inter, sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.23);
+  margin: 10px 0;
+  font-size: 40px;
+  line-height: 6px;
+  color: #FF36D3;
+  user-select: none;
+
+}
+
+h2 {
+  --shadow: #fffff8bd;
+  font-family: Turret Road;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  font-size: 20px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1c3793;
+  text-shadow: -1px -1px 0 var(--shadow),
+     1px -1px 0 var(--shadow),
+     -1px 1px 0 var(--shadow),
+      1px 1px 0 var(--shadow);
+  align-self: center;
+  user-select: none;
+
+}
+
+h3 {
+  font-family: Roboto, sans-serif;
+font-style: normal;
+font-weight: 300;
+line-height: 162.2%;
+
+text-align: center;
+color: #FFFFFF;
+font-size: 17px;
+max-width: 500px;
+align-self: center;
+margin-top: 50px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+ .content {
+   margin: 0 40px;
+ }
+ h1 {
+   font-size: 30px;
+ }
+
+ h2 {
+   font-size: 20px;
+ }
+
+ h3 {
+   font-size: 15px;
+ }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+ .content {
+   margin: 0 100px;
+ }
+ h1 {
+   font-size: 40px;
+ }
+
+ h2 {
+   font-size: 30px;
+ }
+
+ h3 {
+   font-size: 20px;
+ }
+
+}
